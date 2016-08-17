@@ -14,15 +14,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TransparentCalculator
-{
+namespace TransparentCalculator {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
+    public partial class MainWindow : Window {
+        public MainWindow() {
             InitializeComponent();
         }
 
@@ -44,6 +41,30 @@ namespace TransparentCalculator
 
         private void Minimize_Click(object sender, RoutedEventArgs e) {
             WindowState = WindowState.Minimized;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e) {
+            //MessageBox.Show(((Button)sender).Content.ToString());
+            string btn = ((Button)sender).Content.ToString();
+            if (btn == ".") {
+                if (Display.Text.Last() == '.' && Display.Text.Last() == '/' && Display.Text.Last() == '*' && Display.Text.Last() == '-' && Display.Text.Last() == '+' && Display.Text.Last() == '=') {
+                    return;
+                }
+
+                Display.Text += btn;
+
+            } else if (btn == "=") {
+                System.Data.DataTable dt = new System.Data.DataTable();
+
+                var eval = dt.Compute(Display.Text, "");
+                eval = String.Format("{0:0.000}", eval);
+                Display.Text = eval.ToString().Replace(',', '.');
+
+            } else {
+                Display.Text += btn;
+            }
+
+
         }
     }
 }

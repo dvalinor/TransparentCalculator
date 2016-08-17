@@ -23,55 +23,55 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Viewbox Stretch="Uniform" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4">
-                <TextBlock Text="DISPLAY" Name="Display"/>
+                <TextBlock Name="Display"/>
             </Viewbox>
             <Viewbox Stretch="Fill" Grid.Column="0" Grid.Row="2">
-                <Button Content="7" Name="btn7"/>
+                <Button Content="7" Name="btn7" Click="Button_Click"/>
             </Viewbox>
             <Viewbox Stretch="Fill" Grid.Column="1" Grid.Row="2">
-                <Button Content="8" Name="btn8"/>
+                <Button Content="8" Name="btn8" Click="Button_Click"/>
             </Viewbox>
             <Viewbox Stretch="Fill" Grid.Column="2" Grid.Row="2">
-                <Button Content="9" Name="btn9"/>
+                <Button Content="9" Name="btn9" Click="Button_Click"/>
             </Viewbox>
             <Viewbox Stretch="Fill" Grid.Column="0" Grid.Row="3">
-                <Button Content="4" Name="btn4"/>
+                <Button Content="4" Name="btn4" Click="Button_Click"/>
             </Viewbox>
             <Viewbox Stretch="Fill" Grid.Column="1" Grid.Row="3">
-                <Button Content="5" Name="btn5"/>
+                <Button Content="5" Name="btn5" Click="Button_Click"/>
             </Viewbox>
             <Viewbox Stretch="Fill" Grid.Column="2" Grid.Row="3">
-                <Button Content="6" Name="btn6"/>
+                <Button Content="6" Name="btn6" Click="Button_Click"/>
             </Viewbox>
             <Viewbox Stretch="Fill" Grid.Column="0" Grid.Row="4">
-                <Button Content="1" Name="btn1"/>
+                <Button Content="1" Name="btn1" Click="Button_Click"/>
             </Viewbox>
             <Viewbox Stretch="Fill" Grid.Column="1" Grid.Row="4">
-                <Button Content="2" Name="btn2"/>
+                <Button Content="2" Name="btn2" Click="Button_Click"/>
             </Viewbox>
             <Viewbox Stretch="Fill" Grid.Column="2" Grid.Row="4">
-                <Button Content="3" Name="btn3"/>
+                <Button Content="3" Name="btn3" Click="Button_Click"/>
             </Viewbox>
             <Viewbox Stretch="Fill" Grid.Column="0" Grid.Row="5">
-                <Button Content="." Name="btnDot"/>
+                <Button Content="." Name="btnDot" Click="Button_Click"/>
             </Viewbox>
             <Viewbox Stretch="Fill" Grid.Column="1" Grid.Row="5">
-                <Button Content="0" Name="btn0"/>
+                <Button Content="0" Name="btn0" Click="Button_Click"/>
             </Viewbox>
             <Viewbox Stretch="Fill" Grid.Column="2" Grid.Row="5">
-                <Button Content="=" Name="btnEquals"/>
+                <Button Content="=" Name="btnEquals" Click="Button_Click"/>
             </Viewbox>
             <Viewbox Stretch="Fill" Grid.Column="3" Grid.Row="2">
-                <Button Content="/" Name="btnDivide"/>
+                <Button Content="/" Name="btnDivide" Click="Button_Click"/>
             </Viewbox>
             <Viewbox Stretch="Fill" Grid.Column="3" Grid.Row="3">
-                <Button Content="*" Name="btnTimes"/>
+                <Button Content="*" Name="btnTimes" Click="Button_Click"/>
             </Viewbox>
             <Viewbox Stretch="Fill" Grid.Column="3" Grid.Row="4">
-                <Button Content="-" Name="btnMinus"/>
+                <Button Content="-" Name="btnMinus" Click="Button_Click"/>
             </Viewbox>
             <Viewbox Stretch="Fill" Grid.Column="3" Grid.Row="5">
-                <Button Content="+" Name="btnPlus"/>
+                <Button Content="+" Name="btnPlus" Click="Button_Click"/>
             </Viewbox>
             <Button Name="Exit" Width="25" Grid.ColumnSpan="4" HorizontalAlignment="Right" Click="Exit_Click">X</Button>
             <Button Name="Minimize" Width="25" Grid.ColumnSpan="4" HorizontalAlignment="Right" Margin="0,0,25,0" Click="Minimize_Click" FontWeight="ExtraBold">_</Button>
