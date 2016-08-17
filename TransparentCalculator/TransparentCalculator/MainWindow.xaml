@@ -5,8 +5,71 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TransparentCalculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="300" Width="250">
+    <Grid HorizontalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Viewbox Stretch="Uniform" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4">
+            <TextBlock Text="DISPLAY" Name="Display"/>
+        </Viewbox>
+        <Viewbox Stretch="Fill" Grid.Column="0" Grid.Row="1">
+            <Button Content="7" Name="btn7"/>
+        </Viewbox>
+        <Viewbox Stretch="Fill" Grid.Column="1" Grid.Row="1">
+            <Button Content="8" Name="btn8"/>
+        </Viewbox>
+        <Viewbox Stretch="Fill" Grid.Column="2" Grid.Row="1">
+            <Button Content="9" Name="btn9"/>
+        </Viewbox>
+        <Viewbox Stretch="Fill" Grid.Column="0" Grid.Row="2">
+            <Button Content="4" Name="btn4"/>
+        </Viewbox>
+        <Viewbox Stretch="Fill" Grid.Column="1" Grid.Row="2">
+            <Button Content="5" Name="btn5"/>
+        </Viewbox>
+        <Viewbox Stretch="Fill" Grid.Column="2" Grid.Row="2">
+            <Button Content="6" Name="btn6"/>
+        </Viewbox>
+        <Viewbox Stretch="Fill" Grid.Column="0" Grid.Row="3">
+            <Button Content="1" Name="btn1"/>
+        </Viewbox>
+        <Viewbox Stretch="Fill" Grid.Column="1" Grid.Row="3">
+            <Button Content="2" Name="btn2"/>
+        </Viewbox>
+        <Viewbox Stretch="Fill" Grid.Column="2" Grid.Row="3">
+            <Button Content="3" Name="btn3"/>
+        </Viewbox>
+        <Viewbox Stretch="Fill" Grid.Column="0" Grid.Row="4">
+            <Button Content="." Name="btnDot"/>
+        </Viewbox>
+        <Viewbox Stretch="Fill" Grid.Column="1" Grid.Row="4">
+            <Button Content="0" Name="btn0"/>
+        </Viewbox>
+        <Viewbox Stretch="Fill" Grid.Column="2" Grid.Row="4">
+            <Button Content="=" Name="btnEquals"/>
+        </Viewbox>
+        <Viewbox Stretch="Fill" Grid.Column="3" Grid.Row="1">
+            <Button Content="/" Name="btnDivide"/>
+        </Viewbox>
+        <Viewbox Stretch="Fill" Grid.Column="3" Grid.Row="2">
+            <Button Content="*" Name="btnTimes"/>
+        </Viewbox>
+        <Viewbox Stretch="Fill" Grid.Column="3" Grid.Row="3">
+            <Button Content="-" Name="btnMinus"/>
+        </Viewbox>
+        <Viewbox Stretch="Fill" Grid.Column="3" Grid.Row="4">
+            <Button Content="+" Name="btnPlus"/>
+        </Viewbox>
     </Grid>
 </Window>
