@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TransparentCalculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="250">
+        Title="MainWindow" Height="300" Width="250" AllowsTransparency="True" WindowStyle="None" MouseDown="Window_MouseDown">
     <Grid HorizontalAlignment="Stretch">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
