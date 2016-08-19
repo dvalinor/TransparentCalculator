@@ -1,0 +1,35 @@
+﻿<Window x:Class="Opgavesæt_6___Flydekasser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Opgavesæt_6___Flydekasser"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBox x:Name="txtHeight" HorizontalAlignment="Left" Height="23" Margin="79,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtWidth" HorizontalAlignment="Left" Height="23" Margin="79,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtDepth" HorizontalAlignment="Left" Height="23" Margin="79,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtThickness" HorizontalAlignment="Left" Height="23" Margin="79,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="txtWeight" HorizontalAlignment="Left" Margin="87,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="&lt;weight&gt;"/>
+        <Label x:Name="label_Copy" HorizontalAlignment="Left" Margin="20,97,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy1" Content="Weight:" HorizontalAlignment="Left" Margin="28,161,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="Height" HorizontalAlignment="Left" Margin="28,13,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblWidth" Content="Width" HorizontalAlignment="Left" Margin="32,41,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblDepth" Content="Depth" HorizontalAlignment="Left" Margin="31,69,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblThickness" Content="Thickness" HorizontalAlignment="Left" Margin="13,97,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbWood" Content="Wood" HorizontalAlignment="Left" Margin="213,15,0,0" VerticalAlignment="Top" IsChecked="True" GroupName="Material" Checked="rdbMaterial_Checked"/>
+        <RadioButton x:Name="rdbAluminium" Content="Aluminium" HorizontalAlignment="Left" Margin="213,35,0,0" VerticalAlignment="Top" GroupName="Material" Checked="rdbMaterial_Checked"/>
+        <RadioButton x:Name="rdbPlastic" Content="Plastic" HorizontalAlignment="Left" Margin="213,55,0,0" VerticalAlignment="Top" GroupName="Material" Checked="rdbMaterial_Checked"/>
+        <RadioButton x:Name="rdbGlass" Content="Glass" HorizontalAlignment="Left" Margin="213,75,0,0" VerticalAlignment="Top" GroupName="Material" Checked="rdbMaterial_Checked"/>
+        <RadioButton x:Name="rdbIron" Content="Iron" HorizontalAlignment="Left" Margin="213,95,0,0" VerticalAlignment="Top" GroupName="Material" Checked="rdbMaterial_Checked"/>
+        <Button x:Name="btnCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="79,129,0,0" VerticalAlignment="Top" Width="75" Click="btnCalculate_Click"/>
+        <RadioButton x:Name="rdbBox" Content="Box" HorizontalAlignment="Left" Margin="311,15,0,0" VerticalAlignment="Top" IsChecked="True" GroupName="Shape" Checked="rdbShape_Checked"/>
+        <RadioButton x:Name="rdbCylinder" Content="Cylinder" HorizontalAlignment="Left" Margin="311,35,0,0" VerticalAlignment="Top" GroupName="Shape" Checked="rdbShape_Checked"/>
+        <TextBlock x:Name="txtVolume" HorizontalAlignment="Left" Margin="87,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="&lt;volume&gt;"/>
+        <Label x:Name="label_Copy2" Content="Volume:" HorizontalAlignment="Left" Margin="28,187,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtBoyancy" HorizontalAlignment="Left" Margin="87,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="&lt;boyancy&gt;"/>
+        <Label x:Name="label_Copy3" Content="Boyancy:" HorizontalAlignment="Left" Margin="28,213,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

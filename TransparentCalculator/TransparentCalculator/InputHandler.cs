@@ -21,8 +21,8 @@ namespace TransparentCalculator {
                         win.Top -= 8;
                     } else {
                         // Increase window size
-                        win.Height += 8;
-                        win.Width += 8;
+                        win.Height += 10;
+                        win.Width += 10;
                     }
                     break;
                 case Key.Down:
